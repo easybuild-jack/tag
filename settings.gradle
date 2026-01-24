@@ -1,0 +1,31 @@
+rootProject.name = 'tag'
+
+dependencyResolutionManagement.versionCatalogs{
+    libs {
+        library("dependencies", "com.mcst:easyfk-dependencies:3.2.12")
+        library('lombok', 'org.projectlombok:lombok:1.18.38')
+        library('lombokMapstruct', 'org.projectlombok:lombok-mapstruct-binding:0.2.0')
+        library('mapstructProcessor', 'io.github.linpeilie:mapstruct-plus-processor:1.5.0')
+        library('processor', 'org.springframework.boot:spring-boot-configuration-processor:3.2.12')
+    }
+}
+
+
+include 'tag-server'
+include 'tag-api'
+
+include 'tag-remote'
+include 'tag-remote:tag-cloud-api'
+findProject(':tag-remote:tag-cloud-api')?.name = 'tag-cloud-api'
+include 'tag-remote:tag-cloud-provider'
+findProject(':tag-remote:tag-cloud-provider')?.name = 'tag-cloud-provider'
+include 'tag-remote:tag-dubbo-api'
+findProject(':tag-remote:tag-dubbo-api')?.name = 'tag-dubbo-api'
+include 'tag-remote:tag-dubbo-provider'
+findProject(':tag-remote:tag-dubbo-provider')?.name = 'tag-dubbo-provider'
+
+include 'tag-prd'
+include 'tag-prd:tag-prd-client'
+findProject(':tag-prd:tag-prd-client')?.name = 'tag-prd-client'
+include 'tag-prd:tag-prd-bms'
+findProject(':tag-prd:tag-prd-bms')?.name = 'tag-prd-bms'
