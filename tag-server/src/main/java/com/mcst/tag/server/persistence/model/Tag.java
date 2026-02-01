@@ -20,7 +20,7 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
-@TableName("tag")
+@TableName("base_tag")
 @AutoMapper(target = TagDto.class)
 public class Tag extends BaseMyBatisPlusEntity<Tag> {
 

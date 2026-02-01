@@ -3,10 +3,13 @@
 -- 生成时间: 2026-01-24
 -- 说明: 标签模块相关表结构
 -- ============================================================
+-- 设置字符集，确保中文注释正常显示
+SET NAMES utf8mb4;
+SET CHARACTER SET utf8mb4;
 
 -- 1. 标签表
-DROP TABLE IF EXISTS `tag`;
-CREATE TABLE `tag` (
+DROP TABLE IF EXISTS `base_tag`;
+CREATE TABLE `base_tag` (
     `tag_id` VARCHAR(50) NOT NULL COMMENT '标签ID',
     `tag_name` VARCHAR(100) DEFAULT NULL COMMENT '标签名称',
     `sub_name` VARCHAR(100) DEFAULT NULL COMMENT '副标签名称',
