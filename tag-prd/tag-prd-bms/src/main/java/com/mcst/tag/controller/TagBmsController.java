@@ -34,7 +34,7 @@ import java.util.List;
  * @since 2026-01-23
  */
 @Tag(name = "标签相关接口", description = "标签相关接口")
-@RestController
+@ResponseBody
 @RequestMapping("/api/bms/base/tag")
 @ResourceController(group = "baseSetting", id = "baseSetting", name = "基础设置", sort = 98000, path = "/base")
 public class TagBmsController {

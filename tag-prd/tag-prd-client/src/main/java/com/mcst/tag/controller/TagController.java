@@ -14,6 +14,7 @@ import jakarta.annotation.Resource;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -25,7 +26,7 @@ import java.util.List;
  * @since 2026-01-23
  */
 @Tag(name = "标签相关接口", description = "标签相关接口")
-@RestController
+@ResponseBody
 @RequestMapping("/api/base/tag")
 public class TagController {
     @Resource
