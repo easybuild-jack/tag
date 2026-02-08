@@ -1,4 +1,4 @@
 dependencies {
-    api ('com.mcst:service-api')
+    api('com.mcst:service-api')
     compileOnly('com.mcst:easyfk-core')
 }

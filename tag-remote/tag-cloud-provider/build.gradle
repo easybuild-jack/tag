@@ -1,6 +1,6 @@
 dependencies {
-    api ('com.mcst:web-micro')
+    api('com.mcst:web-micro')
     api project(':tag-remote:tag-cloud-api')
     api project(':tag-server')
-    compileOnly ('com.mcst:remote-cloud')
+    compileOnly('com.mcst:remote-cloud')
 }

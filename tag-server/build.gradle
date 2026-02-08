@@ -1,5 +1,5 @@
 dependencies {
     api project(':tag-api')
-    implementation ('com.mcst:orm-mybatis')
+    implementation('com.mcst:orm-mybatis')
 }
 

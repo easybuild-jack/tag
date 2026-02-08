@@ -1,29 +1,31 @@
 package com.mcst.tag.server.service.impl;
 
-import com.mcst.tag.api.response.TagResp;
-import com.mcst.tag.api.request.TagReq;
-import com.mcst.tag.api.dto.TagDto;
-import com.mcst.tag.server.service.ITagService;
-import com.mcst.tag.server.repository.ITagRepository;
 import com.mcst.easyfk.core.dto.page.PageResult;
-import com.mcst.easyfk.core.dto.request.SearchRequest;
 import com.mcst.easyfk.core.dto.request.ModifyRequest;
+import com.mcst.easyfk.core.dto.request.SearchRequest;
 import com.mcst.easyfk.core.dto.response.BaseResult;
-import com.mcst.easyfk.repository.util.ConditionUtil;
-import java.util.List;
-import jakarta.annotation.Resource;
-import com.mcst.easyfk.service.util.ServiceUtil;
 import com.mcst.easyfk.core.utils.common.TransformUtil;
-/**
-* <p>
-* 标签 服务实现类
-* </p>
-*
-* @author liu yijun
-* @since 2026-01-23
-*/
+import com.mcst.easyfk.repository.util.ConditionUtil;
+import com.mcst.easyfk.service.util.ServiceUtil;
+import com.mcst.tag.api.dto.TagDto;
+import com.mcst.tag.api.request.TagReq;
+import com.mcst.tag.api.response.TagResp;
+import com.mcst.tag.server.repository.ITagRepository;
+import com.mcst.tag.server.service.ITagService;
+import jakarta.annotation.Resource;
 
-public class TagServiceImpl  implements ITagService {
+import java.util.List;
+
+/**
+ * <p>
+ * 标签 服务实现类
+ * </p>
+ *
+ * @author liu yijun
+ * @since 2026-01-23
+ */
+
+public class TagServiceImpl implements ITagService {
     @Resource
     private ITagRepository tagRepository;
 
@@ -59,7 +61,7 @@ public class TagServiceImpl  implements ITagService {
 
     @Override
     public PageResult<TagResp> queryByPage(SearchRequest<TagReq> param) {
-        return TransformUtil.transformPageResult(this.tagRepository.queryByPage(ConditionUtil.conditionByRequest(param)),TagResp.class);
+        return TransformUtil.transformPageResult(this.tagRepository.queryByPage(ConditionUtil.conditionByRequest(param)), TagResp.class);
     }
 
     @Override

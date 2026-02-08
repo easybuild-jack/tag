@@ -1,6 +1,6 @@
 rootProject.name = 'tag'
 
-dependencyResolutionManagement.versionCatalogs{
+dependencyResolutionManagement.versionCatalogs {
     libs {
         library("dependencies", "com.mcst:easyfk-dependencies:3.2.12")
         library('lombok', 'org.projectlombok:lombok:1.18.38')

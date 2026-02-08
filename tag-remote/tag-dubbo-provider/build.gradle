@@ -1,5 +1,5 @@
 dependencies {
-    api ('com.mcst:web-micro')
+    api('com.mcst:web-micro')
     api project(':tag-remote:tag-dubbo-api')
     api project(':tag-server')
     compileOnly('com.mcst:rpc-dubbo')

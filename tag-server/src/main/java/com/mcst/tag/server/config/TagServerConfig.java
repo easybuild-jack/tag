@@ -1,21 +1,21 @@
 package com.mcst.tag.server.config;
 
-import com.mcst.tag.api.*;
-import com.mcst.tag.server.service.*;
-import com.mcst.tag.server.repository.*;
-import com.mcst.tag.server.impl.*;
-import com.mcst.tag.server.service.impl.*;
-import com.mcst.tag.server.repository.impl.*;
-
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Bean;
+import com.mcst.tag.api.ITagApi;
+import com.mcst.tag.server.impl.TagApiServerImpl;
+import com.mcst.tag.server.repository.ITagRepository;
+import com.mcst.tag.server.repository.impl.TagRepositoryImpl;
+import com.mcst.tag.server.service.ITagService;
+import com.mcst.tag.server.service.impl.TagServiceImpl;
+import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.annotation.Bean;
+
 /**
-*
-* @author liu yijun
-*/
-@Configuration
+ *
+ * @author liu yijun
+ */
+@AutoConfiguration
 @EnableConfigurationProperties
 public class TagServerConfig {
 

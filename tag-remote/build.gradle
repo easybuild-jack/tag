@@ -1,4 +1,4 @@
-subprojects{
+subprojects {
     dependencies {
         api project(':tag-api')
     }

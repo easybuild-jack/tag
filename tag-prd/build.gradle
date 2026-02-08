@@ -1,7 +1,7 @@
 subprojects {
     dependencies {
         api project(':tag-api')
-        api ('com.mcst:web-prd')
+        api('com.mcst:web-prd')
         implementation('com.mcst:rpc-cloud')
     }
 }

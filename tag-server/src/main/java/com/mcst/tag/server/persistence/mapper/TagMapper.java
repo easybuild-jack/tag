@@ -1,7 +1,7 @@
 package com.mcst.tag.server.persistence.mapper;
 
-import com.mcst.tag.server.persistence.model.Tag;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.mcst.tag.server.persistence.model.Tag;
 
 /**
  * <p>
