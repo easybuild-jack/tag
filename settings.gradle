@@ -14,6 +14,16 @@ dependencyResolutionManagement.versionCatalogs {
 include 'tag-server'
 include 'tag-api'
 
+include 'tag-orm'
+include 'tag-orm:tag-orm-api'
+findProject(':tag-orm:tag-orm-api')?.name = 'tag-orm-api'
+include 'tag-orm:tag-orm-plus'
+findProject(':tag-orm:tag-orm-plus')?.name = 'tag-orm-plus'
+include 'tag-orm:tag-orm-flex'
+findProject(':tag-orm:tag-orm-flex')?.name = 'tag-orm-flex'
+include 'tag-orm:tag-orm-hibernate'
+findProject(':tag-orm:tag-orm-hibernate')?.name = 'tag-orm-hibernate'
+
 include 'tag-remote'
 include 'tag-remote:tag-cloud-api'
 findProject(':tag-remote:tag-cloud-api')?.name = 'tag-cloud-api'

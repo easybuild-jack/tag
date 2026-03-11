@@ -10,7 +10,7 @@ import com.mcst.easyfk.service.util.ServiceUtil;
 import com.mcst.tag.api.dto.TagDto;
 import com.mcst.tag.api.request.TagReq;
 import com.mcst.tag.api.response.TagResp;
-import com.mcst.tag.server.repository.ITagRepository;
+import com.mcst.tag.orm.repository.ITagRepository;
 import com.mcst.tag.server.service.ITagService;
 import jakarta.annotation.Resource;
 

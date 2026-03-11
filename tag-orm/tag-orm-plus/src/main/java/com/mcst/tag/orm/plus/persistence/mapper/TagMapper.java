@@ -1,7 +1,7 @@
-package com.mcst.tag.server.persistence.mapper;
+package com.mcst.tag.orm.plus.persistence.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.mcst.tag.server.persistence.model.Tag;
+import com.mcst.tag.orm.plus.persistence.model.Tag;
 
 /**
  * <p>
@@ -14,4 +14,3 @@ import com.mcst.tag.server.persistence.model.Tag;
 public interface TagMapper extends BaseMapper<Tag> {
 
 }
-

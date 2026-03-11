@@ -1,10 +1,10 @@
-package com.mcst.tag.server.repository.impl;
+package com.mcst.tag.orm.plus.repository.impl;
 
 import com.mcst.easyfk.service.mybatisplus.impl.BaseMyBatisRepositoryImpl;
 import com.mcst.tag.api.dto.TagDto;
-import com.mcst.tag.server.persistence.mapper.TagMapper;
-import com.mcst.tag.server.persistence.model.Tag;
-import com.mcst.tag.server.repository.ITagRepository;
+import com.mcst.tag.orm.plus.persistence.mapper.TagMapper;
+import com.mcst.tag.orm.plus.persistence.model.Tag;
+import com.mcst.tag.orm.repository.ITagRepository;
 
 /**
  * <p>

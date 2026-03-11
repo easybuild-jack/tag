@@ -1,4 +1,4 @@
-package com.mcst.tag.server.repository;
+package com.mcst.tag.orm.repository;
 
 import com.mcst.easyfk.repository.api.IBaseRepository;
 import com.mcst.tag.api.dto.TagDto;

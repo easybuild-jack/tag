@@ -2,8 +2,6 @@ package com.mcst.tag.server.config;
 
 import com.mcst.tag.api.ITagApi;
 import com.mcst.tag.server.impl.TagApiServerImpl;
-import com.mcst.tag.server.repository.ITagRepository;
-import com.mcst.tag.server.repository.impl.TagRepositoryImpl;
 import com.mcst.tag.server.service.ITagService;
 import com.mcst.tag.server.service.impl.TagServiceImpl;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
@@ -30,12 +28,6 @@ public class TagServerConfig {
     @ConditionalOnMissingBean
     public ITagService tagService() {
         return new TagServiceImpl();
-    }
-
-    @Bean
-    @ConditionalOnMissingBean
-    public ITagRepository tagRepository() {
-        return new TagRepositoryImpl();
     }
 
 
