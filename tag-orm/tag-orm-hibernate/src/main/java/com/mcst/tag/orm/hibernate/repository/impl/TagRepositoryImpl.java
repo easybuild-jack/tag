@@ -3,7 +3,7 @@ package com.mcst.tag.orm.hibernate.repository.impl;
 import com.mcst.easyfk.service.hibernate.impl.BaseHibernateRepositoryImpl;
 import com.mcst.tag.api.dto.TagDto;
 import com.mcst.tag.orm.hibernate.persistence.model.Tag;
-import com.mcst.tag.orm.hibernate.persistence.repository.TagJpaRepository;
+import com.mcst.tag.orm.hibernate.persistence.mapper.TagMapper;
 import com.mcst.tag.orm.repository.ITagRepository;
 
 /**
@@ -14,7 +14,7 @@ import com.mcst.tag.orm.repository.ITagRepository;
  * @author liu yijun
  * @since 2026-01-23
  */
-public class TagRepositoryImpl extends BaseHibernateRepositoryImpl<TagJpaRepository, TagDto, Tag, String> implements ITagRepository {
+public class TagRepositoryImpl extends BaseHibernateRepositoryImpl<TagMapper, TagDto, Tag, String> implements ITagRepository {
 
 
 }
